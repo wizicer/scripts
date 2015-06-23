@@ -61,15 +61,8 @@ choco install graphviz
 choco install fiddler
 choco install torgoisegit
 
-npm i -g bower
-npm i -g coffee-script
-npm i -g yo
-npm i -g nodemon
-npm i -g gulp
-npm i -g grunt-cli
-npm i -g generator-gulp-angular
-npm i -g npm-check-updates
-npm i -g browser-sync
-npm i -g cleaver
-npm i -g hexo
+git clone https://github.com/wizicer/dotvim.git %USERPROFILE%\vimfiles
+cd /d %USERPROFILE%\vimfiles
+call install.bat
 
+setx PATH "%PATH%;C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Vim\vim74"
