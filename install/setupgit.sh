@@ -17,4 +17,5 @@ git config --global alias.assume "update-index --assume-unchanged"
 git config --global alias.unassume "update-index --no-assume-unchanged"
 git config --global alias.makeexecutable "update-index --chmod=+x"
 git config --global alias.makeexec "update-index --chmod=+x"
+git config --global alias.initignore "!curl https://raw.githubusercontent.com/github/gitignore/master/VisualStudio.gitignore>.gitignore"
 git config --global url.https://.insteadOf git://
