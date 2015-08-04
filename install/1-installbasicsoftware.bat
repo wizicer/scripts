@@ -25,7 +25,8 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-choco install git.install -y
+rem git is so basic we should install first before install others
+rem choco install git.install -y
 choco install git-credential-winstore -y
 choco install vim -y
 choco install conemu -y
@@ -33,8 +34,9 @@ choco install opera -y
 choco install everything -y
 choco install linkshellextension -y
 choco install nodejs.install -y
-rem choco install wp-project-screen -y
 choco install 7zip.install -y
+
+rem choco install wp-project-screen -y
 rem choco install winsplit -y
 rem choco install clcl -y
 rem choco install applocale -y
