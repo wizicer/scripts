@@ -13,11 +13,8 @@ alias gvim='start gvim $1'
 
 alias reload="source ~/.bashrc"
 
-newconsole() {
-    $1 -new_console:$2
-    # Parameter refer to http://conemu.github.io/en/NewConsole.html
-}
-
-alias nc=newconsole
-
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
+
+alias cls='clear'
+alias cd..='cd ..'
+alias cd...='cd ../..'
