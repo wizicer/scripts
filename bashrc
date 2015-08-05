@@ -16,5 +16,5 @@ alias reload="source ~/.bashrc"
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
 
 alias cls='clear'
-alias cd..='cd ..'
-alias cd...='cd ../..'
+alias dir='ls -l'
+alias type='cat'
