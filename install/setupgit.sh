@@ -24,4 +24,5 @@ git config --global alias.mergeours "merge --strategy-option ours"
 git config --global alias.showname "show --name-only"
 git config --global alias.commitempty "commit --allow-empty -m"
 git config --global alias.forbidoriginpush "config remote.origin.pushurl nothing"
+git config --global alias.get "clone --depth 1"
 git config --global url.https://.insteadOf git://
