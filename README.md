@@ -10,6 +10,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.web
 choco install git -y
 ```
 
+# Quickly setup git alias
+
+You can use following command to quickly setup git environment:
+```
+curl -s https://raw.githubusercontent.com/wizicer/scripts/master/install/setupgit.sh | bash -s
+```
+
 # SSH
 
 ## Step 1: Generate Key
