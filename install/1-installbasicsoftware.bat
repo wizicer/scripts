@@ -33,6 +33,7 @@ choco install conemu -y
 choco install opera -y
 choco install everything -y
 choco install linkshellextension -y
+choco install hashcheck -y
 choco install nodejs.install -y
 choco install 7zip.install -y
 
