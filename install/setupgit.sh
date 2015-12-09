@@ -1,7 +1,7 @@
 #!/bin/sh
 
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-git config --global alias.s "!git status && echo ========= && git --no-pager lg -9 && echo . && echo ========= && git remote -v && echo Author: \`git config user.name\` \<\`git config user.email\`\> && echo ========= && git ls-files -v | grep '^[a-z]' | cut -c3-"
+git config --global alias.s "!git status && echo ========= && git --no-pager lg -9 && echo. && git count-objects && echo ========= && git remote -v && echo Author: \`git config user.name\` \<\`git config user.email\`\> && echo ========= && git ls-files -v | grep '^[a-z]' | cut -c3-"
 git config --global alias.l "!git lg -9"
 git config --global alias.co "checkout"
 git config --global alias.ci "commit"
@@ -27,3 +27,4 @@ git config --global alias.forbidoriginpush "config remote.origin.pushurl nothing
 git config --global alias.get "clone --depth 1"
 git config --global alias.sethttpsinsteadofgit "config --global url.https://.insteadOf git://"
 git config --global alias.updatealias "!curl -s https://raw.githubusercontent.com/wizicer/scripts/master/install/setupgit.sh | bash -s"
+git config --global alias.compact "!git gc && git prune"
