@@ -22,6 +22,7 @@ git config --global alias.initnodeignore "!curl https://raw.githubusercontent.co
 git config --global alias.mergetheirs "merge --strategy-option theirs"
 git config --global alias.mergeours "merge --strategy-option ours"
 git config --global alias.showname "show --name-only"
+git config --global alias.showsummary "show --find-renames --summary"
 git config --global alias.commitempty "commit --allow-empty -m"
 git config --global alias.forbidoriginpush "config remote.origin.pushurl nothing"
 git config --global alias.get "clone --depth 1"
