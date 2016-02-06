@@ -1,7 +1,7 @@
 #!/bin/sh
 
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-git config --global alias.s "!git status && echo ========= && git --no-pager lg -9 && echo. && git count-objects && echo ========= && git remote -v && echo Author: \`git config user.name\` \<\`git config user.email\`\> && echo ========= && git ls-files -v | grep '^[a-z]' | cut -c3-"
+git config --global alias.s "!git status && echo ========= && git --no-pager lg -9 && echo && git count-objects && echo ========= && git remote -v && echo Author: \`git config user.name\` \<\`git config user.email\`\> && echo ========= && git ls-files -v | grep '^[a-z]' | cut -c3-"
 git config --global alias.l "!git lg -9"
 git config --global alias.co "checkout"
 git config --global alias.ci "commit"
