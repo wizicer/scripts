@@ -32,3 +32,4 @@ alias type='cat'
 alias cd..='cd ..'
 alias cd...='cd ../..'
 
+alias gitacf="git add -A && GIT_AUTHOR_DATE='$(date -u -d -16hours)' GIT_COMMITTER_DATE='$(date -u -d -16hours)' git commit -am"
