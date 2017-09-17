@@ -1,4 +1,4 @@
-// Icon made by Dave Gandy
+;Icon made by Dave Gandy
 Menu, Tray, Icon, layout.ico
 startBarHeight := 38
 SysGet, X1, 76
