@@ -1,3 +1,5 @@
+#!/bin/bash
+
 git config user.email liangshuangde@163.com
 git filter-branch --commit-filter \
 'export GIT_AUTHOR_NAME="Icer";\
