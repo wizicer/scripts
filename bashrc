@@ -13,7 +13,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
 elif [[ "$OSTYPE" == "msys" ]]; then
     tgitcommand() {
-        /c/Program\ Files/TortoiseGit/bin/TortoisegitProc.exe /command:$1 $2
+        start "" "c:\Program Files\TortoiseGit\bin\TortoisegitProc.exe" /command:$1 $2
     }
     alias tgit=tgitcommand
     alias tigit=tgitcommand
