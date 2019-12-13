@@ -25,6 +25,8 @@ elif [[ "$OSTYPE" == "msys" ]]; then
     alias reload="source ~/.bashrc"
 fi
 
+alias pgo='http_proxy=http://10.7.0.131:8119 go $1'
+
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
 alias cls='clear'
 alias dir='ls -l'
