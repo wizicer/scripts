@@ -41,3 +41,6 @@ git config --global alias.fetcha "fetch -a"
 git config --global alias.pushtags "push --follow-tags"
 git config --global alias.createbundle "!git bundle create ../\${PWD##*/}.bundle --all"
 git config --global alias.cb "!git bundle create ../\${PWD##*/}.bundle --all"
+git config --global alias.backup "!git bundle create ~/OneDrive/Backup/git/\${PWD##*/}.bundle --all \$(git show-ref --verify --quiet refs/stash && echo refs/stash)"
+git config --global alias.restore-stash '!git fetch "$HOME/OneDrive/Backup/git/$(basename "$PWD").bundle" refs/stash:refs/stash >/dev/null 2>&1 && echo "Stash restored."'
+git config --global alias.checkbackup '!dest="$HOME/OneDrive/Backup/git/$(basename "$PWD").bundle"; if [ -f "$dest" ]; then h=$(git ls-remote "$dest" HEAD | cut -f1 | cut -c1-7); d=$(date -r "$dest" "+%Y-%m-%d %H:%M:%S"); lh=$(git rev-parse HEAD 2>/dev/null | cut -c1-7); [ "$h" = "$lh" ] && st="MATCH" || st="MISMATCH (Local: $lh)"; echo "Backup OK | Date: $d | Bundle Hash: $h | Sync: $st"; else echo "No backup found"; fi'
